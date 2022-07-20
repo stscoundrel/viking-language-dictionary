@@ -18,7 +18,7 @@ import { getDictionary } from 'viking-language-dictionary'
 const dictionary = getDictionary()
 
 // Manipulate data as you wish -> perhaps get all words staring with 'o'
-const oWords = dictionary.filter((entry) => entry.word.charAt(0) === 'o')
+const oWords = dictionary.filter((entry) => entry.headword.charAt(0) === 'o')
 
 // Or output a single word:
 console.log(dictionary[8])
