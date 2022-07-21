@@ -1,6 +1,6 @@
 {
   "name": "viking-language-dictionary",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "description": "Old Norse Dictionary for Node.js. From 'Viking Language' study book",
   "repository": "https://github.com/stscoundrel/viking-language-dictionary.git",
   "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
