@@ -1,4 +1,5 @@
 import { getDictionary } from '../src';
+import { ADDITIONAL_ENTRIES } from '../src/services/dictionary';
 
 describe('Viking Language Dictionary tests', () => {
   test('Returns dictionary in array format', () => {
@@ -25,10 +26,16 @@ describe('Viking Language Dictionary tests', () => {
     expect(commonWords.length).toBe(259);
   });
 
-  test('Dictionary contains 2 893 words', () => {
+  test('Dictionary contains 2 898 words', () => {
     const result = getDictionary();
 
-    expect(result.length).toBe(2893);
+    expect(result.length).toBe(2898);
+  });
+
+  test('Dictionary contains additional "einwherr" type entries', () => {
+    const dictionary = getDictionary();
+
+    ADDITIONAL_ENTRIES.forEach((entry) => expect(dictionary.includes(entry)).toBeTruthy());
   });
 
   test('Dictionary words are returned in correct object format', () => {
